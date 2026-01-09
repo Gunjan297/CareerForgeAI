@@ -34,8 +34,7 @@ export const contactSchema = z.object({
   twitter: z.string().optional(),
 });
 
-export const entrySchema = z
-  .object({
+export const entrySchema = z.object({
     title: z.string().min(1, "Title is required"),
     organization: z.string().min(1, "Organization is required"),
     startDate: z.string().min(1, "Start date is required"),
