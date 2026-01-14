@@ -3,6 +3,7 @@
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
 import { GoogleGenAI } from "@google/genai";
+import { revalidatePath } from "next/cache";
 
 const ai = new GoogleGenAI({});
 

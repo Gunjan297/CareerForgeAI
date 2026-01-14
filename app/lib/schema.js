@@ -36,7 +36,7 @@ export const contactSchema = z.object({
 
 export const entrySchema = z.object({
     title: z.string().min(1, "Title is required"),
-    organization: z.string().min(1, "Organization is required"),
+    organization: z.string().optional(),
     startDate: z.string().min(1, "Start date is required"),
     endDate: z.string().optional(),
     description: z.string().min(1, "Description is required"),
@@ -58,10 +58,13 @@ export const entrySchema = z.object({
 export const resumeSchema = z.object({
   contactInfo: contactSchema,
   summary: z.string().min(1, "Professional summary is required"),
+  education: z.array(entrySchema),
   skills: z.string().min(1, "Skills are required"),
   experience: z.array(entrySchema),
-  education: z.array(entrySchema),
   projects: z.array(entrySchema),
+  achievements: z.array(z.string().max(200)).max(5).optional(),
+  positionOfResponsibility: z.array(z.string().max(200)).max(5).optional(),
+
 });
 
 export const coverLetterSchema = z.object({
