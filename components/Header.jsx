@@ -45,7 +45,7 @@ const Header = async() => {
                     href="/resume"
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
-                    Build Resume
+                    Resume
                   </Link>
 
                   <Link
