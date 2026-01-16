@@ -49,16 +49,16 @@ const getTotalQuestions = () => {
   ].map((item, i) => (
     <Card
       key={i}
-      className="border border-orange-500/20 bg-gradient-to-br from-black via-zinc-900 to-black shadow-lg rounded-2xl"
+      className="border border-orange-500/20 bg-gradient-to-br from-black via-black to-black shadow-lg rounded-2xl"
     >
       <CardHeader className="flex flex-row items-center justify-between pb-2">
-        <CardTitle className="text-sm text-zinc-300">
+        <CardTitle className="text-sm text-orange-300">
           {item.title}
         </CardTitle>
         {item.icon}
       </CardHeader>
       <CardContent>
-        <div className="text-3xl font-bold text-orange-400">
+        <div className="text-3xl font-bold text-white">
           {item.value}
         </div>
         <p className="text-xs text-zinc-500 mt-1">

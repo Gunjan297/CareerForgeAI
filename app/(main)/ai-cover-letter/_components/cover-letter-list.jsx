@@ -56,12 +56,12 @@ const CoverLetterList = ({coverLetters}) => {
       <CardHeader className="space-y-4">
         <div className="flex items-start justify-between gap-4">
           <div className="space-y-1">
-            <CardTitle className="text-xl font-bold bg-gradient-to-r from-orange-400 via-orange-400 to-orange-400 bg-clip-text text-transparent">
+            <CardTitle className="text-xl font-bold bg-gradient-to-r from-orange-300 via-orange-300 to-orange-300 bg-clip-text text-transparent">
               {letter.jobTitle}{" "}
               <span className="font-medium text-orange-200">at</span>{" "}
               {letter.companyName}
             </CardTitle>
-            <CardDescription className="text-sm text-orange-200/60">
+            <CardDescription className="text-sm">
               Created on {format(new Date(letter.createdAt), "PPP")}
             </CardDescription>
           </div>
@@ -117,7 +117,7 @@ const CoverLetterList = ({coverLetters}) => {
       </CardHeader>
 
       <CardContent>
-        <div className="text-sm text-orange-200/70 leading-relaxed line-clamp-3">
+        <div className="text-sm leading-relaxed line-clamp-3">
           {letter.jobDescription}
         </div>
       </CardContent>

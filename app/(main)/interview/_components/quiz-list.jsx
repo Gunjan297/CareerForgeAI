@@ -31,7 +31,7 @@ const QuizList = ({ assessments }) => {
           onClick={() => setSelectedQuiz(assessment)}
         >
           <CardHeader className="space-y-2">
-            <CardTitle className="text-xl font-bold text-orange-400">
+            <CardTitle className="text-xl font-bold text-white">
               Quiz {i + 1}
             </CardTitle>
 

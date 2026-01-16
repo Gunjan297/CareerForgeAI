@@ -1,4 +1,11 @@
-import { BrainCircuit, Briefcase, LineChart, ScrollText } from "lucide-react";
+import {
+  BrainCircuit,
+  Briefcase,
+  LineChart,
+  ScrollText,
+  SearchCheck,
+  FileSearch,
+} from "lucide-react";
 
 export const features = [
   {
@@ -22,6 +29,19 @@ export const features = [
   {
     icon: <ScrollText className="w-10 h-10 mb-4 text-primary" />,
     title: "ATS-Optimized Resume Builder",
-    description: "Create professional, ATS-friendly resumes that highlight your strengths and boost shortlisting chances.",
+    description:
+      "Create professional, ATS-friendly resumes that highlight your strengths and boost shortlisting chances.",
+  },
+  {
+    icon: <SearchCheck className="w-10 h-10 mb-4 text-primary" />,
+    title: "Personalized Job Recommendations",
+    description:
+      "Get real-time job opportunities tailored to your role and industry, powered by intelligent search and matching.",
+  },
+  {
+    icon: <FileSearch className="w-10 h-10 mb-4 text-primary" />,
+    title: "Resume–Job Match Score",
+    description:
+      "Analyze how well your resume matches a job description with an AI-powered score, strengths, and improvement tips.",
   },
 ];

@@ -2,9 +2,9 @@ import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from '@cl
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
-import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu'
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
 import { checkUser } from '@/lib/checkUser.js'
+import { ChevronDown } from 'lucide-react'
 
 const Header = async() => {
   await checkUser();
@@ -41,12 +41,37 @@ const Header = async() => {
                     Industry Overview
                   </Link>
 
-                  <Link
-                    href="/resume"
-                    className="text-gray-300 hover:text-orange-400 transition-colors"
+                  <DropdownMenu>
+                  <DropdownMenuTrigger className="text-gray-300 hover:text-orange-400 transition-colors outline-none">
+                    <div className='flex mt-1.5'>
+                    Resume 
+                    <ChevronDown/>
+                    </div>
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent
+                    align="start"
+                    className="bg-zinc-900 border border-zinc-800 text-gray-300"
                   >
-                    Resume
-                  </Link>
+                    <DropdownMenuItem asChild>
+                      <Link
+                        href="/resume"
+                        className="cursor-pointer hover:text-orange-400"
+                      >
+                        Build Resume
+                      </Link>
+                    </DropdownMenuItem>
+
+                    <DropdownMenuItem asChild>
+                      <Link
+                        href="/resume-score-check"
+                        className="cursor-pointer hover:text-orange-400"
+                      >
+                        Resume Score Checker 
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
 
                   <Link
                     href="/ai-cover-letter"
@@ -60,6 +85,13 @@ const Header = async() => {
                     className="text-gray-300 hover:text-orange-400 transition-colors"
                   >
                     Interview Prep
+                  </Link>
+
+                  <Link
+                    href="/jobs"
+                    className="text-gray-300 hover:text-orange-400 transition-colors"
+                  >
+                    Jobs
                   </Link>
                 </div>
 

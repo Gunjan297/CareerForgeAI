@@ -43,7 +43,7 @@ const DashboardView = ({ insights }) => {
   const lastUpdatedDate = format(new Date(insights.lastUpdated), "dd MMM yyyy");
   const nextUpdateDistance = formatDistanceToNow(
     new Date(insights.nextUpdate),
-    { addSuffix: true }
+    // { addSuffix: true }
   );
 
   return (
@@ -63,7 +63,7 @@ const DashboardView = ({ insights }) => {
               Last updated on {lastUpdatedDate}
             </p>
             <p className="text-sm text-zinc-500 mt-2">
-              Next refresh {nextUpdateDistance}
+              Next refresh in {nextUpdateDistance}
             </p>
           </div>
 
