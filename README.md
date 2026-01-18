@@ -75,9 +75,6 @@ npm run dev
 ```
 The application will start at: http://localhost:3000
 
-# Contributing
-Contributions are welcome! 
-
 # Contact
 For any questions or suggestions: 
 Email: mgpsgunjan6166@gmail.com
@@ -85,7 +82,7 @@ Email: mgpsgunjan6166@gmail.com
 Project Link: https://career-forge-ai-ecru.vercel.app/
 
 <img width="960" height="476" alt="image" src="https://github.com/user-attachments/assets/47b73688-8084-4c38-bfa7-013dc4327192" />
-<img width="960" height="478" alt="image" src="https://github.com/user-attachments/assets/e2b29fb9-2e5b-491a-9fb0-2ef0ecfa948b" />
+<img width="953" height="473" alt="image" src="https://github.com/user-attachments/assets/283e2908-fba2-4853-bcdc-b27db5d8f551" />
 <img width="955" height="470" alt="image" src="https://github.com/user-attachments/assets/58ef0e0c-4564-4249-a28c-ebea343add8a" />
 <img width="957" height="479" alt="image" src="https://github.com/user-attachments/assets/511b0f21-2ea6-4a49-9bfb-ce8410193990" />
 <img width="957" height="473" alt="image" src="https://github.com/user-attachments/assets/a0574ba8-8a79-464e-ab6d-a9f4eae11e20" />
