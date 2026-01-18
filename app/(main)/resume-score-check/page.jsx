@@ -130,31 +130,46 @@ export default function ResumeReviewPage() {
               </span>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-black border border-zinc-800 rounded-lg p-4">
-                <h3 className="text-orange-300 font-semibold mb-2">
-                  Strengths
-                </h3>
-                <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
-                  {result.strengths.map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="grid md:grid-cols-3 gap-6">
 
-              <div className="bg-black border border-zinc-800 rounded-lg p-4">
-                <h3 className="text-orange-300 font-semibold mb-2">
-                  Improvements
-                </h3>
-                <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
-                  {result.improvements.map((i, idx) => (
-                    <li key={idx}>{i}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+      {/* Strengths */}
+      <div className="bg-black border border-zinc-800 rounded-lg p-4">
+        <h3 className="text-orange-300 font-semibold mb-2">
+          Strengths
+        </h3>
+        <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+          {result.strengths.map((s, i) => (
+            <li key={i}>{s}</li>
+          ))}
+        </ul>
+      </div>
 
-          </div>
+      {/* Improvements */}
+      <div className="bg-black border border-zinc-800 rounded-lg p-4">
+        <h3 className="text-orange-300 font-semibold mb-2">
+          Improvements
+        </h3>
+        <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+          {result.improvements.map((i, idx) => (
+            <li key={idx}>{i}</li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Missing Keywords */}
+      <div className="bg-black border border-zinc-800 rounded-lg p-4">
+        <h3 className="text-orange-300 font-semibold mb-2">
+          Missing Keywords
+        </h3>
+        <ul className="list-disc list-inside text-sm text-gray-300 space-y-1">
+          {result.missing_keywords.map((k, idx) => (
+            <li key={idx}>{k}</li>
+          ))}
+        </ul>
+      </div>
+
+      </div>
+    </div>
         )}
       </div>
     </div>
