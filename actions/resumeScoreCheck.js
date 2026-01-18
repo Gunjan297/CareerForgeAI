@@ -1,6 +1,4 @@
 "use server";
-export const runtime = "nodejs";
-
 import { extractResumeText } from "@/lib/resumeParser";
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
